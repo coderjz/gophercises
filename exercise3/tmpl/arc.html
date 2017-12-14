@@ -1,0 +1,14 @@
+<html>
+    <body>
+<h2>{{.Title}}</h2>
+{{range .Paragraphs}}
+    <p>{{.}}</p>
+{{end}}
+
+<div>
+{{range .Options}}
+{{.Text}}<a href="/{{.Arc}}"> Select --&gt;</a><br>
+{{end}}
+</div>
+    </body>
+</html>
